@@ -1,0 +1,81 @@
+﻿<UserControl x:Class="ModernUI.MVVM.View.Page3View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ModernUI.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             MinHeight="450"
+             MinWidth="800"
+            >
+    <Grid>
+        <Grid Margin="0,0,-34,-37">
+            <Grid.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#7be9f6" Offset="0.0"/>
+                    <GradientStop Color="#f083da" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120" MinHeight="120"/>
+                <RowDefinition Height="330" />
+            </Grid.RowDefinitions>
+            <Viewbox Width="48" Height="48" Grid.Row="0">
+                <Canvas Width="24" Height="24">
+                    <Path Fill="Black" Data="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z" 
+                          HorizontalAlignment="Left" Canvas.Top="2.05" VerticalAlignment="Top" Canvas.Left="46.74" />
+                </Canvas>
+            </Viewbox>
+            <Label Grid.Row="0"
+                Content="Welcome to our online meeting app" HorizontalAlignment="Left" Margin="52,20,0,0" VerticalAlignment="Top" IsEnabled="False" FontFamily="Times New Roman" FontWeight="Bold" FontSize="24"/>
+            <Label  Grid.Row="0" 
+                Content="Connect - Collaborate - Differentiate" HorizontalAlignment="Left" Margin="105,58,0,0" VerticalAlignment="Top" IsEnabled="False" FontFamily="Times New Roman" FontWeight="Bold" FontSize="22"/>
+            <Button Style="{StaticResource ButtonTheme}" Height="140" Width="140" Grid.Row="1"
+                Margin="168,186,526,4" Cursor="Hand">
+                <StackPanel>
+                    <Viewbox Width="48" Height="48">
+                        <Canvas Width="24" Height="24">
+                            <Path Fill="Black" Data="M9,10V12H7V10H9M13,10V12H11V10H13M17,10V12H15V10H17M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H6V1H8V3H16V1H18V3H19M19,19V8H5V19H19M9,14V16H7V14H9M13,14V16H11V14H13M17,14V16H15V14H17Z" />
+                        </Canvas>
+                    </Viewbox>
+                    <TextBlock Text="Schedule" FontSize="18"/>
+                </StackPanel>
+            </Button>
+            <Button Style="{StaticResource ButtonTheme}" Height="140" Width="140" Grid.Row="1"
+                Margin="168,25,526,165" Cursor="Hand">
+                <StackPanel>
+                    <Viewbox Width="48" Height="48">
+                        <Canvas Width="24" Height="24">
+                            <Path Fill="Black" Data="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                        </Canvas>
+                    </Viewbox>
+                    <TextBlock Text="Create New" FontSize="18"/>
+                </StackPanel>
+            </Button>
+            <Button Style="{StaticResource ButtonTheme}" Height="140" Width="140" Grid.Row="1"
+                Margin="437,186,257,4" Cursor="Hand">
+                <StackPanel>
+                    <Viewbox Width="48" Height="48">
+                        <Canvas Width="24" Height="24">
+                            <Path Fill="Black" Data="M12 3C6.5 3 2 6.58 2 11C2.05 13.15 3.06 15.17 4.75 16.5C4.75 17.1 4.33 18.67 2 21C4.37 20.89 6.64 20 8.47 18.5C9.61 18.83 10.81 19 12 19C17.5 19 22 15.42 22 11S17.5 3 12 3M12 17C7.58 17 4 14.31 4 11S7.58 5 12 5 20 7.69 20 11 16.42 17 12 17M17 12V10H15V12H17M13 12V10H11V12H13M9 12V10H7V12H9Z" />
+                        </Canvas>
+                    </Viewbox>
+                    <TextBlock Text="Chat" FontSize="18"/>
+                </StackPanel>
+            </Button>
+            <Button Style="{StaticResource ButtonTheme}" Height="140" Width="140" Grid.Row="1"
+                Margin="437,25,257,165" Cursor="Hand">
+                <StackPanel>
+                    <Viewbox Width="48" Height="48">
+                        <Canvas Width="24" Height="24">
+                            <Path Fill="Black" Data="M20 8L14.5 13.5L13.09 12.09L16.17 9H10.5C8 9 6 11 6 13.5V20H4V13.5C4 9.91 6.91 7 10.5 7H16.17L13.08 3.91L14.5 2.5L20 8Z" />
+                        </Canvas>
+                    </Viewbox>
+                    <TextBlock Text="Join" FontSize="18"/>
+                </StackPanel>
+            </Button>
+
+        </Grid>
+    </Grid>
+</UserControl>
